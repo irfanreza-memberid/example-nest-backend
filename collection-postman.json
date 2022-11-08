@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "bde6086f-0bb0-4572-a693-4ad5c2beeae6",
+		"name": "Example App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7037976"
+	},
+	"item": [
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "Create Member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"referalCode\": \"123\",\n    \"fullname\": \"syaifulislam\",\n    \"phone\":\"+6281212097976\",\n    \"email\":\"syaiful@memberf.as\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/member",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Member",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullname\": \"syaiful update lagi2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/member/8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"member",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/member/8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"member",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Point",
+			"item": [
+				{
+					"name": "Add Point Member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"memberCode\": \"EYC35E\",\n    \"point\": 200\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/point",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"point"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
